@@ -5,7 +5,9 @@ const router = express.Router()
 
 
 router.get("/", (req, res)=>{
-  res.send("ok")
+  res.json({
+    'message': 'hello world!'
+  })
 })
 
 app.use("/", router)
